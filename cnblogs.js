@@ -84,7 +84,7 @@ $(function () {
             }
             var hasTitleNum  = 0;  // 已经有了标题的标签个数
             for(var i = 0;i<length;i++){
-                var text = $h[i].text();
+                var text = $($h[i]).text();
                 if(/^\d+]/.test(text)){
                     hasTitleNum++;
                 }
