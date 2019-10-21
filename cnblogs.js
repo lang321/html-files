@@ -13,7 +13,7 @@ $(function () {
         }
 
         function setTitle($ele, title){
-            $ele.addClass('change').attr('data-title', title + '  ');
+            $ele.addClass('change').attr('data-title', title + '.  ');
         }
 
         function isTitle($ele){
@@ -85,7 +85,7 @@ $(function () {
             var hasTitleNum  = 0;  // 已经有了标题的标签个数
             for(var i = 0;i<length;i++){
                 var text = $($h[i]).text();
-                if(/^\d+]/.test(text)){
+                if(/^\d+/.test(text)){
                     hasTitleNum++;
                 }
                 if(hasTitleNum>=length/2){
